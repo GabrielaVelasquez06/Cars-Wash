@@ -36,10 +36,10 @@ package com.company;
 
 
                             System.out.println("\t\t\n\n BIENVENIDO AL MANTENIMIENTO DE CLIENTES Y SERVICIOS");
-                            System.out.println("\t\t\n Que Cambios Desea Realizar ");
+                            System.out.println("\t\t\n QUE CAMBIOS DESEA REALIZAR ");
                             System.out.println("\t\t 1. Clientes ");
                             System.out.println("\t\t 2. Servicios ");
-                            System.out.println("\t\t 3. salir ");
+                            System.out.println("\t\t 3. Salir ");
 
                             opcion1 = sn.nextInt();
 
@@ -62,7 +62,7 @@ package com.company;
                                             case 1:
 
                                                 System.out.println("\n\n\t-------------------------------------------------");
-                                                System.out.println("                  ESTE ES EL LISTADO DE CLIENTES");
+                                                System.out.println("\t|           ESTE ES EL LISTADO DE CLIENTES      |");
                                                 System.out.println("\t-------------------------------------------------");
                                                 ArrayList<String> Clientes = new ArrayList<>();
 
@@ -85,6 +85,7 @@ package com.company;
                                                     System.out.println("    |        " + Clientes.get(i) + "   |        " + CodClientes.get(i) + "          |     ");
 
                                                 }
+                                                System.out.println("\t-------------------------------------------------");
                                                 System.out.println("\t\n1. Para Agregar Clientes");
                                                 System.out.println("\t\n2. Para Regresar Al Menu Anterior");
                                                 int opcionminimenu = sn.nextInt();
@@ -113,13 +114,14 @@ package com.company;
                                                     }
 
                                                 }
-                                                System.out.println("------------------------------------------------------------");
-                                                System.out.println("\t             ESTA ES LA NUEVA LISTA DE CLIENTES");
-                                                System.out.println("------------------------------------------------------------");
+                                                System.out.println("\t------------------------------------------------------");
+                                                System.out.println("\t|         ESTA ES LA NUEVA LISTA DE CLIENTES     |");
+                                                System.out.println("\t------------------------------------------------------");
 
-                                                System.out.println("\t\t        Clientes         |        Codcliente");
+                                                System.out.println("\t|         Clientes           |        Codcliente     |");
+                                                System.out.println("\t------------------------------------------------------");
                                                 for (int i = 0; i < Clientes.size(); i++) {
-                                                    System.out.println("  |       " + Clientes.get(i) + "       |             " + CodClientes.get(i) + "         |     ");
+                                                    System.out.println("\t|       " + Clientes.get(i) + "     |             " + CodClientes.get(i) + "         |     ");
 
                                                 }
 
@@ -127,15 +129,16 @@ package com.company;
 
 
                                             case 2:
-                                                System.out.println("\t\n Esta Es La Lista De Clientes Cual Desea Eliminar");
-                                                System.out.println("\t-----------------------------------------------------");
+                                                System.out.println("\t\t---------------------------------------------------------");
+                                                System.out.println("\t    |   ESTA ES LA LISTA DE CLIENTES LA CUAL DESEA ELIMINAR |");
+                                                System.out.println("\t\t---------------------------------------------------------");
                                                 ArrayList<String> Clientes1 = new ArrayList<>();
 
                                                 Clientes1.add("  Carlos Herrera");
                                                 Clientes1.add("Samantha Bonilla");
                                                 Clientes1.add("    Maria Rivera");
-                                                Clientes1.add("  Angel aguilera");
-;
+                                                Clientes1.add("  Angel Aguilera");
+
                                                 ArrayList<Integer> CodClientes1 = new ArrayList<>();
 
                                                 CodClientes1.add(0);
@@ -143,11 +146,13 @@ package com.company;
                                                 CodClientes1.add(2);
                                                 CodClientes1.add(3);
 
-                                                System.out.println("\t\t        Clientes         |        Codcliente");
+                                                System.out.println("\t    |           Clientes         |         Codcliente       |");
                                                 for (int i = 0; i < Clientes1.size(); i++) {
-                                                    System.out.println("       |     " + Clientes1.get(i) + "       |      " + CodClientes1.get(i) + "     |     ");
+                                                    System.out.println("\t    |     " + Clientes1.get(i) + "       |             " +   CodClientes1.get(i) + "            |     ");
 
                                                 }
+
+                                                System.out.println("\t\t---------------------------------------------------------");
 
                                                 System.out.println("\t\n Escriba El Codigo Del Cliente Que Desea Eliminar");
 
@@ -158,19 +163,23 @@ package com.company;
                                                 boolean respuestaeliminar = CodClientes1.contains(clienteeliminar);
                                                 if(respuestaeliminar==true){
                                                     System.out.println("\tEl Cliente Fue Encontrado Con Exito " +
-                                                            "\n\t Escriba El Nombre De El Nuevo Cliente.");
+                                                            "\n\n\n Escriba El Nombre De El Nuevo Cliente.");
                                                     String clientenuevo = sn.nextLine();
                                                     Clientes1.set(clienteeliminar, clientenuevo);
 
                                                 }else{
                                                     System.out.println("\t\nEL CLIENTE NO PUSO SER ENCONTRADO DIJITE UN CODIGO VALIDO");
                                                 }
-                                                System.out.println("\t\n ESTA ES LA NUEVA LISTA DE CLIENTES");
-                                                System.out.println("\t--------------------------------------------");
+                                                System.out.println("\t------------------------------------------------------");
+                                                System.out.println("\t|         ESTA ES LA NUEVA LISTA DE CLIENTES         |");
+                                                System.out.println("\t------------------------------------------------------");
 
-                                                System.out.println("\t\t |       Clientes         |        Codcliente |");
+                                                System.out.println("\t|         Clientes         |        Codcliente       |");
+
+
                                                 for (int i = 0; i < Clientes1.size(); i++) {
-                                                    System.out.println("       |     " + Clientes1.get(i) + "     | " + CodClientes1.get(i) + "   |     ");
+                                                    System.out.println("    |     " + Clientes1.get(i) + "     |           " + CodClientes1.get(i) + "             |     ");
+
 
                                                 }
 
@@ -195,6 +204,7 @@ package com.company;
 
                                     boolean salir5 = false;
                                     while(!salir5) {
+                                        System.out.println("\t------------------------------------------------------");
                                         System.out.println("\t\n QUE DESEA REALIZAR");
                                         System.out.println("\t 1. agregar.");
                                         System.out.println("\t 2. eliminar.");
@@ -205,10 +215,9 @@ package com.company;
 
                                             case 1:
                                                 ArrayList<String> listServicios = new ArrayList<>();
-                                                listServicios.add("Manzana");
-                                                listServicios.add("coca cola");
-                                                listServicios.add("pera");
-                                                listServicios.add("frijoles");
+                                                listServicios.add("Lavado    Premium");
+                                                listServicios.add("Lavado    General");
+                                                listServicios.add("Lavado & Aspirado");
 
                                                 ArrayList<Integer> priceServicios = new ArrayList();
                                                 priceServicios.add(350);
