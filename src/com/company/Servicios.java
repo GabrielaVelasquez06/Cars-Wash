@@ -91,7 +91,6 @@ public class Servicios {
             System.out.println("|        Sr / Sra   " + NombreCliente  +        "            | \n|         EL TOTAL DE SU FACTURA ES:   " + total +"      |");
             System.out.println("-------------------------------------------------");
 
-
         }
 
 
