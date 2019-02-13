@@ -14,7 +14,7 @@ package com.company;
 
             while (!salir) {
 
-                System.out.println("\t\t\n\n\n BIENVENIDO AL CARS WAHS VELASQUEZ");
+                System.out.println("\t\t\n\n\n\n\n BIENVENIDO AL CARS WAHS VELASQUEZ");
                 System.out.println("\n\t\tQUE SERVICIO DESEA ");
                 System.out.println("1. Lavado & Mas .");
                 System.out.println("2. Mantenimiento Clientes & Servicios.");
@@ -61,9 +61,9 @@ package com.company;
 
                                             case 1:
 
-                                                System.out.println("\n\n -----------------------------------------------");
-                                                System.out.println("\n\n                  ESTE ES EL LISTADO DE CLIENTES");
-                                                System.out.println("\t-----------------------------------------------");
+                                                System.out.println("\n\n\t-------------------------------------------------");
+                                                System.out.println("                  ESTE ES EL LISTADO DE CLIENTES");
+                                                System.out.println("\t-------------------------------------------------");
                                                 ArrayList<String> Clientes = new ArrayList<>();
 
                                                 Clientes.add("  Carlos Herrera");
@@ -78,11 +78,11 @@ package com.company;
                                                 CodClientes.add(2);
                                                 CodClientes.add(3);
 
-                                                System.out.println("\t   |        Clientes         |      Codcliente   |");
-                                                System.out.println("\t---------------------------------------------------");
+                                                System.out.println("\t|        Clientes           |     Codcliente    |");
+                                                System.out.println("\t-------------------------------------------------");
 
                                                 for (int i = 0; i < Clientes.size(); i++) {
-                                                    System.out.println("    |        " + Clientes.get(i) + "   |        " + CodClientes.get(i) + "                |    ");
+                                                    System.out.println("    |        " + Clientes.get(i) + "   |        " + CodClientes.get(i) + "          |     ");
 
                                                 }
                                                 System.out.println("\t\n1. Para Agregar Clientes");
